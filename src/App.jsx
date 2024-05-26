@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import  MyHeader  from './components/header/MyHeader'
+import MyHeader from './components/header/MyHeader'
 
-function App () {
+function App() {
   return (
     <div className="App">
-      <MyHeader />
+      <Header />
       <main>
         <h2>Welcome to my React app!</h2>
         {/* Other components and content can go here */}
@@ -14,5 +14,4 @@ function App () {
   );
 }
 
-
-export default App
+export default App;
