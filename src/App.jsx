@@ -1,11 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import MyHeader from './components/header/MyHeader'
+import { useState } from "react";
+import "./App.css";
+import MyHeader from "./components/header/MyHeader";
+import HeaderYoutube from "./components/header-youtube/HeaderYoutube";
 
-function App () {
+function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
+      <HeaderYoutube />
       <main>
         <h2>Welcome to my React app!</h2>
         {/* Other components and content can go here */}
@@ -14,5 +16,4 @@ function App () {
   );
 }
 
-
-export default App
+export default App;
