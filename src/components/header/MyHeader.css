@@ -1,14 +1,25 @@
 
-
+header img {
+  height: 80px;
+}
+body {
+    height: 125vh;
+    background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}
 .header {
     background-color: var(--primary-color);
     padding: 20px;
     color: #FFC770;
     text-align: center;
+    border-radius: 10px;
+    border-style: outset;
+    opacity: 0.4;;
   }
   
   .header nav ul {
-    list-style: none;
+    list-style: lower-greek;
     padding: 0;
   }
   
