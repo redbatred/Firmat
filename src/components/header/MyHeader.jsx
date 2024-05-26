@@ -1,5 +1,6 @@
 import React from 'react';
 import './MyHeader.css'; 
+import '../../Kolorsat.css';
 
 const MyHeader = () => {
   return (
