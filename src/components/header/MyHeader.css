@@ -1,38 +1,79 @@
 
-header img {
-  height: 80px;
-}
-body {
-    height: 125vh;
-    background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
-    background-size: cover;
-    font-family: sans-serif;
-}
+
 .header {
-    background-color: var(--primary-color);
-    padding: 20px;
-    color: #FFC770;
-    text-align: center;
-    border-radius: 10px;
-    border-style: outset;
-    opacity: 0.4;;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 3rem auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #151618;
+}
+
+.btn {
+  color: white;
+  background-color: #6E32EF;
+  display: inline-block;
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+  border: 1px solid #6E32EF;
+}
+
+.menu {
+  display: none;
+}
+
+.menu.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu.close {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #151618;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
   }
   
-  .header nav ul {
-    list-style: lower-greek;
-    padding: 0;
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
   }
   
-  .header nav ul li {
-    display: inline;
-    margin: 0 10px;
+  .menu.open {
+    display: flex;
   }
-  
-  .header nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .header nav ul li a:hover {
-    text-decoration: underline;
-  }
+}
