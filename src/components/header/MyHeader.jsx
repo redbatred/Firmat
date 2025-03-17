@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './MyHeader.css'; 
-import '../../Kolorsat.css';
+import '../../kolorsat.css';
 
 const MyHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
